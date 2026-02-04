@@ -2,10 +2,10 @@
 
 #set page(
   margin: (
-    left: 10mm, 
-    right: 10mm, 
-    top: 15mm, 
-    bottom: 15mm
+    left: 8mm,
+    right: 8mm,
+    top: 8mm,
+    bottom: 8mm
   ),
 )
 
@@ -13,126 +13,73 @@
 
 #show: project.with(
   theme: rgb("#0F83C0"),
-  name: "Harkunwar Kochar",
-  title: "Software Engineer",
+  name: "Harnoor Singh",
   contact: (
     contact(
-      text: "604-123-4567"
+      text: "LinkedIn://username",
+      link: "https://www.linkedin.com/in/username"
     ),
     contact(
-      text: "hello@example.com", 
-      link: "mailto:hello@example.com"
+      text: "Github://username",
+      link: "https://www.github.com/username"
     ),
     contact(
-      text: "GitHub.com/Harkunwar", 
-      link: "https://www.github.com/Harkunwar"
-    ),
-    contact(
-      text: "www.Harkunwar.com", 
-      link: "https://www.harkunwar.com"
+      text: "email@example.com",
+      link: "mailto:email@example.com"
     )
   ),
   main: (
     section(
-      title: "Work Experience",
+      title: "Experience",
       content: (
         subSection(
-          title: "Splunk",
-          titleEnd: "Vancouver, BC",
+          title: "Microsoft Corp.",
+          titleEnd: "Atlanta, GA",
           subTitle: "Software Engineer",
-          subTitleEnd: "(June 2021 - Present)",
+          subTitleEnd: "(July 2022 – April 2025)",
+          content: [
+            *AI / Applied ML (Microsoft Security)*
+            #list(
+              [Architected and implemented *AI-driven query translation (NL2KQL)* using *Vector Databases and Retrieval-Augmented Generation (RAG)* pipelines, enabling natural-language security analytics over structured telemetry.],
+              [Owned the *end-to-end design, implementation, and validation* of AI-enhanced workflows, partnering with security engineers and PMs to ensure *correctness, scalability, and production readiness*.],
+              [Led experimentation and *prompt optimization strategies* to improve query accuracy and system reliability in production security environments.],
+              [*Technologies:* LLM-based APIs, RAG Pipelines, Vector Databases, NL2KQL, Security Analytics]
+            )
+            *Mobile Engineering / Platform (Microsoft Defender)*
+            #list(
+              [Led the design and development of *end-to-end native test frameworks* for Microsoft Defender *Android and iOS*, *doubling release velocity (2× faster)* while improving regression coverage and reliability.],
+              [Built and maintained *native mobile testing infrastructure*, enabling faster iteration cycles and reducing production regressions across multiple Defender releases.],
+              [Collaborated with cross-platform mobile teams to integrate testing pipelines into CI/CD workflows.],
+              [*Technologies:* Android, iOS, Native Testing Frameworks, Automated Testing, CI/CD]
+            )
+            *Cross-Functional / Developer Advocacy*
+            #list(
+              [Partnered with the *Microsoft Designer* team as a creative collaborator, contributing to *go-to-market strategy* and producing technical marketing content, for my YouTube channel Singh in USA (*1M+ subscribers*).]
+            )
+          ],
+        ),
+        subSection(
+          title: "NCR (National Cash Register)",
+          titleEnd: "Atlanta, GA",
+          subTitle: "Software Engineer",
+          subTitleEnd: "(July 2020 – July 2022)",
           content: list(
-            [Improved web page load time by a factor of *10 times* by using React Virtualized Lazy Loading to render large lists.],
-            [Spearheaded the implementation and design of embedding images and icons in Splunk Dashboard using React affecting *1000+ users*.],
-            [Designed and implemented *4 major dialogs* used in Splunk Dashboard.],
+            [Contributed to NCR Silver POS Android application, working within a *1M+ LOC* codebase spanning *19 modules* and serving hundreds of thousands of global users.],
+            [Served as *Atlanta team lead and Scrum Master*, coordinating execution for *11 engineers and QA members*, driving sprint planning, delivery, and cross-team alignment.],
+            [Engineered production features using *Dagger2, RxJava, Kotlin Multiplatform, and C++*, including cross-platform shared libraries for business-critical workflows.],
+            [Designed and implemented instrumentation and unit testing frameworks using *Espresso, Mockito, and JUnit*, improving stability and reducing post-release defects.],
+            [Acted as a technical interviewer and campus recruiter, representing NCR at university engineering fairs and contributing to intern hiring pipelines.],
+            [*Technologies:* Android, Kotlin, RxJava, Dagger2, C++, Espresso, Mockito, JUnit]
           ),
         ),
         subSection(
-          title: "AppNeta",
-          titleEnd: "Vancouver, BC",
-          subTitle: "Full Stack Developer Intern",
-          subTitleEnd: "(September 2019 – May 2020)",
+          title: "Panasonic Automotive",
+          titleEnd: "Peachtree City, GA",
+          subTitle: "Systems Engineering Intern",
+          subTitleEnd: "(May 2017 – May 2018)",
           content: list(
-            [Solely responsible for the development of the Web Analytics Dashboard using AWS Lambda and API Gateway in NodeJS.],
-            [Improved Experience Monitoring feature with React and Java which actively monitors *4000+ sites* from around the world.],
-            [Successfully developed the HTTP Monitoring feature used by *over 100 companies* to monitor their APIs and Websites.],
-            [Refined analytics report system generating *1000+ reports daily*.],
-            [Automated internal AWS tasks with Terraform and TeamCity.]
+            [Built an Android-based infotainment simulation app replicating Panasonic's in-car entertainment system, reducing developer onboarding and use-case understanding time by ~2×.]
           ),
-        ),
-        subSection(
-          title: "Better Way Lighting",
-          titleEnd: "Vancouver, BC",
-          subTitle: "Embedded System Developer",
-          subTitleEnd: "(April 2019 – Aug 2020)",
-          content: list(
-            [Spearheaded a Smart LED Mesh System Project for the company.],
-            [Physically designed and programmed an Arduino DMX Controller to automate testing of lighting products.],
-            [Built an interactive Movie Lighting System using the Espressif Framework.],
-          ),
-        ),
-      ),
-    ),
-    section(
-      title: "Projects",
-      content: (
-        subSection(
-          title: "Nutri – Nutrition Tracker app",
-          content: list("Engineered and completed a nutrition tracker app in 24 hours using Flutter and Microsoft’s Computer Vision APIs. The app allows one to take picture of their meal and add the nutrition level one ate to their daily intake.")
-        ),
-        subSection(
-          title: "CycSafe Vest",
-          content: list("Formulated a custom vest for bikers that uses Arduino and an accelerometer to produce LED lights on the back using hand gestures.")
-        ),
-        subSection(
-          title: "Root Checker",
-          content: list([Created a simple ad-free android app using Java and Bash to check if the phone is rooted. It has over 500,000 downloads and has generated *\$2000 in revenue*.])
-        ),
-      ),
-    )
-  ),
-  sidebar: (
-    section(
-      title: "Skills",
-      content: (
-        subSection(
-          title: "Languages",
-          content: (
-            "C",
-            "C++",
-            "CSS",
-            "HTML5",
-            "Java",
-            "JavaScript",
-            "Rust",
-            "TypeScript",
-          ).join(" • "),
-        ),
-        subSection(
-          title: "Technologies",
-          content: (
-            "NodeJS",
-            "Firebase",
-            "Git",
-            "Flutter",
-            "Express",
-            "Arduino",
-            "AWS",
-            "React",
-            "Terraform",
-            "Cypress", 
-            "Selenium"
-          ).join(" • "),
-        ),
-        subSection(
-          title: "concepts",
-          content: (
-            "Object-oriented programming",
-            "Machine Learning",
-            "Unit Tests",
-            "Functional Programming",
-            "Agile Methadology",
-          ).join(" • "),
         ),
       ),
     ),
@@ -140,44 +87,18 @@
       title: "Education",
       content: (
         subSection(
-          title: [
-            #set par(justify: false)
-            University of British Columbia
-          ],
-          subTitle: "BSc in Computer Science",
+          title: "Georgia State University",
+          titleEnd: "Atlanta, GA",
+          subTitle: "BS & MS in Computer Science",
+          subTitleEnd: "(2016 – 2020)",
           content: [
-            Graduated: May 2021\
-            Vancouver, BC
+            *summa cum laude* | GPA: 4.0\
+            President's List, Honors College
           ],
         ),
       ),
-    ),
-    section(
-      title: "Volunteer",
-      content: (
-        subSection(
-          title: "Project Roots",
-          content: list(
-            [Saved over *900,000L* of water], [Generated over *\$6000*],
-            [Saved consumers over *\$8000*],
-          ),
-        ),
-      ),
-    ),
-    section(
-      title: "Awards",
-      content: (
-        subSection(
-          content: list(
-            [1st Year Computer Science \(BSc\) *Honorable Mention*],
-            [Hellmann’s Best New Enactus Project 2019 *1st Prize*],
-            [Hellmann’s Food Security Challenge 2018 *1st Prize*],
-            [Scotiabank EcoLiving Green Challenge *Regional Champion*],
-            [Scotiabank Environmental Challenge *Regional Champion*],
-          ),
-        ),
-      ),
-    ),
+    )
   ),
+  sidebar: (),
 )
 

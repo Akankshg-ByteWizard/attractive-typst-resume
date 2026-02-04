@@ -40,27 +40,18 @@
 
   let formattedName = block(upper(text(2.5em, weight: "bold", theme, name)))
 
-  let formattedTitle = block(upper(text(2.25em, gray.darken(50%), title)))
-
-  let titleColumn = align(center)[
-    #formattedName
-    #formattedTitle
-  ]
-
-  let contactColumn = align(center)[#contact.map(c => {
+  let contactLine = contact.map(c => {
     if c.link == none [
-      #c.text\
+      #c.text
     ] else [
-      #underline(link(c.link, text(theme, c.text)))\
+      #link(c.link, text(theme, c.text))
     ]
-  }).join()]
+  }).join(" • ")
 
-  grid(
-    columns: (1fr, 2fr),
-    column-gutter: 2em,
-    contactColumn,
-    titleColumn,
-  )
+  align(center)[
+    #formattedName
+    #contactLine
+  ]
   
   set par(justify: true)
 
@@ -124,16 +115,5 @@
   let sidebarSection = parseSection(sidebar)
 
 
-  grid(
-    columns: (1fr, 2fr),
-    column-gutter: 1em,
-    sidebarSection,
-    mainSection,
-  )
-
-  // Main body.
-  set par(justify: true)
-  show: columns.with(3, gutter: 1.3em)
-
-  // body
+  mainSection
 }
