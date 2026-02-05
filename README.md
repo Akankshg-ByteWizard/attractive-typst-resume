@@ -2,8 +2,6 @@ This is an Attractive Resume Template built with Typst, an open source Latex alt
 
 To compile it to pdf, make sure typst is installed. The provided flake.nix and .envrc is useful if you have nix and direnv installed. This template using the Mulish Google Font and is provided in the `assets/fonts` directory.
 
-Mirror link at Typst.app https://typst.app/project/rLlknWbYc8XMaZc45BHlMl
-
 Preview:\
-<img src="assets/images/attractive-typst-resume-blue.png?v=3" width="400px" />
-<img src="assets/images/attractive-typst-resume-green.png?v=3" width="400px" />
+<img src="assets/images/attractive-typst-resume-blue.png?v=4" width="400px" />
+<img src="assets/images/attractive-typst-resume-green.png?v=4" width="400px" />
