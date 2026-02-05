@@ -16,12 +16,12 @@
   name: "Harnoor Singh",
   contact: (
     contact(
-      text: "LinkedIn://username",
-      link: "https://www.linkedin.com/in/username"
+      text: "LinkedIn://iharnoor",
+      link: "https://www.linkedin.com/in/iharnoor"
     ),
     contact(
-      text: "Github://username",
-      link: "https://www.github.com/username"
+      text: "Github://iharnoor",
+      link: "https://www.github.com/iharnoor"
     ),
     contact(
       text: "email@example.com",
