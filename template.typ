@@ -104,7 +104,10 @@
 
   let parseSection(section) = {
     section.map(m => {
-      [
+      if m.title == "" [
+        #pagebreak()
+        #parseSubSections(m.content)
+      ] else [
         #backgroundTitle(m.title)
         #parseSubSections(m.content)
       ]
