@@ -81,13 +81,16 @@
 
   let parseSubSections(subSections) = {
     subSections.map(s => {
+      let hasTitle = s.title != "" or s.titleEnd != none
       [
-        #createLeftRight(
-          left: secondaryTitle(s.title),
-          right: if s.titleEnd != none { 
-            italicColorTitle(s.titleEnd)
-          }
-        )
+        #if hasTitle [
+          #createLeftRight(
+            left: secondaryTitle(s.title),
+            right: if s.titleEnd != none {
+              italicColorTitle(s.titleEnd)
+            }
+          )
+        ]
         #if s.subTitle != none or s.subTitleEnd != none [
           #text(
             top-edge: 0.2em,

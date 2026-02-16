@@ -9,15 +9,12 @@
   ),
 )
 
-#set text(font: "Mulish", size: 8.0pt)
+#set text(font: "Mulish", size: 9pt)
 
 #show: project.with(
-  theme: rgb("#000000"),
+  theme: rgb("#0F83C0"),
   name: "Akanksh Gatla",
   contact: (
-    contact(
-      text: "716-808-2702",
-    ),
     contact(
       text: "akankshgatla@gmail.com",
       link: "mailto:akankshgatla@gmail.com"
@@ -30,6 +27,10 @@
       text: "GitHub",
       link: "https://github.com/Akankshg-ByteWizard/"
     ),
+    contact(
+      text: "Portfolio",
+      link: "https://akankshg-bytewizard.github.io/"
+    )
   ),
   main: (
     section(
@@ -37,7 +38,7 @@
       content: (
         subSection(
           content: [
-            Passionate Software Development Engineer (Data Engineering) with 4+ years of expertise architecting and deploying enterprise-scale distributed data platforms across fintech and healthcare domains. Deep technical proficiency in Apache Spark, PySpark, Databricks, Snowflake, AWS Glue, and Azure Data Factory ecosystems. Proven ability to design and optimize petabyte-scale ETL/ELT pipelines, implement machine learning workflows for predictive analytics, and drive AI-powered automation initiatives. Expert in building cloud-native data architectures on AWS and Azure, leveraging advanced optimization techniques including partitioning, clustering, and indexing to achieve significant performance improvements. Strong track record of reducing processing latency by up to 40%, implementing robust CI/CD frameworks, and delivering analytics-ready datasets that enable data-driven strategic decisions across organizations.
+            Accomplished Big Data Engineer and AI/ML Specialist with 5+ years of expertise architecting and deploying enterprise-scale distributed data platforms across fintech and healthcare domains. Deep technical proficiency in Apache Spark, PySpark, Databricks, Snowflake, AWS Glue, and Azure Data Factory ecosystems. Proven ability to design and optimize petabyte-scale ETL/ELT pipelines, implement machine learning workflows for predictive analytics, and drive AI-powered automation initiatives. Expert in building cloud-native data architectures on AWS and Azure, leveraging advanced optimization techniques including partitioning, clustering, and indexing to achieve significant performance improvements. Strong track record of reducing processing latency by up to 40%, implementing robust CI/CD frameworks, and delivering analytics-ready datasets that enable data-driven strategic decisions across organizations.
           ],
         ),
       ),
@@ -48,40 +49,8 @@
         subSection(
           title: "ARTECH LLC, Client: Capital One",
           titleEnd: "Plano, TX",
-          subTitle: "App Dev - Java - Sr.",
-          subTitleEnd: "Nov 2025 – Present",
-          content: [
-            #list(
-              [Built a new ETL feature using Databricks operational compute, sourcing Snowflake views and S3 Delta datasets, with Airflow-triggered orchestration for daily TB-scale runs.],
-              [Designed region-agnostic configuration generation from YAML, producing in-memory, region-specific runtime configs for Glue and Databricks jobs across regions.],
-              [Delivered end-to-end pipeline rebuild for Business Bureau source format changes, handling schema/version shifts and downstream logic updates with 100% parity in validation outputs.],
-              [Implemented data validation and reconciliation checks across multi-source inputs to reduce load failures by 30-40% in the first month.],
-              [Optimized Spark job performance through partitioning and broadcast joins, cutting runtimes by 20-30% and stabilizing peak-hour SLAs at 99.5%+ on-time.],
-              [Aligned data contracts with cross-functional teams, reducing integration rework by ~25% and accelerating change approval cycles.],
-              [Automated alerting and runbook-driven remediation for ETL failures, improving MTTR by 35-45% and shrinking on-call escalations.]
-            )
-            *Technologies:* Databricks, Apache Spark, PySpark, Airflow, Snowflake, AWS S3, Delta Lake, AWS Glue, YAML, SQL, Python
-          ],
-        ),
-        subSection(
-          title: "Genzeon Corporation",
-          titleEnd: "Exton, PA",
-          subTitle: "Data Integration Engineer",
-          subTitleEnd: "Aug 2025 – Nov 2025",
-          content: [
-            #list(
-              [Architected end-to-end ingestion pipelines processing HL7 feeds and EPIC FHIR databases into Azure Data Lake using Spark and Delta Lake for 350+ healthcare clients.],
-              [Built intelligent automation framework in Databricks with PySpark and ML algorithms, reducing manual data mapping effort by 40% and improving data quality.],
-              [Designed Medallion Architecture (Bronze/Silver/Gold) Databricks Jobs delivering curated views that improved downstream analytics performance by 30%.]
-            )
-            *Technologies:* Azure Databricks, PySpark, Apache Spark, ADLS Gen2, Delta Lake, HL7, FHIR, Airflow, SQL, Python, Medallion Architecture
-          ],
-        ),
-        subSection(
-          title: "D-Vital LLC, Client: Capital One",
-          titleEnd: "Dublin, OH",
-          subTitle: "Data Engineer",
-          subTitleEnd: "Nov 2024 – Aug 2025",
+          subTitle: "Senior Data Engineer",
+          subTitleEnd: "(Dec 2025 – Present)",
           content: [
             #list(
               [Engineered Standard Performance Reporting application integrating OneLake with AWS S3, orchestrating 20+ Glue Spark ETL jobs through Step Functions for automated daily processing.],
@@ -96,23 +65,42 @@
           ],
         ),
         subSection(
-          title: "STUEBS ENTERPRISE INC, CLIENT: CODE NINJAS",
-          titleEnd: "Dublin, OH",
-          subTitle: "Sensei/Coding Instructor",
-          subTitleEnd: "Sep 2024 – Oct 2024",
+          title: "Genzeon Corporation",
+          titleEnd: "Exton, PA",
+          subTitle: "Data Integration Engineer",
+          subTitleEnd: "(Aug 2025 – Nov 2025)",
           content: [
             #list(
-              [Instructed 30+ students aged 7-14 in programming fundamentals, game development, and robotics, delivering hands-on coding curriculum across JavaScript, Python, and Scratch.],
-              [Facilitated STEM workshops and coding camps, mentoring students in building real-world projects including mobile games, web applications, and Roblox creations.]
+              [Architected end-to-end ingestion pipelines processing HL7 feeds and EPIC FHIR databases into Azure Data Lake using Spark and Delta Lake for 350+ healthcare clients.],
+              [Built intelligent automation framework in Databricks with PySpark and ML algorithms, reducing manual data mapping effort by 40% and improving data quality.],
+              [Designed Medallion Architecture (Bronze/Silver/Gold) Databricks Jobs delivering curated views that improved downstream analytics performance by 30%.]
             )
-            *Technologies:* JavaScript, Python, Scratch, Roblox Studio, Lua, Game Development, STEM Education            
+            *Technologies:* Azure Databricks, PySpark, Apache Spark, ADLS Gen2, Delta Lake, HL7, FHIR, Airflow, SQL, Python, Medallion Architecture
           ],
         ),
         subSection(
-          title: "Datalysys LLC",
+          title: "D-Vital LLC, Client: Capital One",
           titleEnd: "Dublin, OH",
-          subTitle: "Intern Data Engineer",
-          subTitleEnd: "Feb 2024 – Oct 2024",
+          subTitle: "Data Engineer",
+          subTitleEnd: "(Nov 2024 – Aug 2025)",
+          content: [
+            #list(
+              [Engineered Standard Performance Reporting application integrating OneLake with AWS S3, orchestrating 20+ Glue Spark ETL jobs through Step Functions for automated daily processing.],
+              [Implemented CI/CD pipelines with GitHub Actions, Jenkins, and Terraform, cutting deployment time by 40% using Blue-Green strategies for zero-downtime releases.],
+              [Optimized Snowflake warehouse performance by 40% through query profiling, reengineering complex joins, and implementing materialized views for heavily accessed datasets.],
+              [Enhanced query performance by 30% by architecting Snowflake Tables with compound indexing and micro-partitioning on 1.6M+ row datasets.],
+              [Led cross-functional teams to build AWS Serverless Data Products (Lambda, Step Functions, S3, Glue), delivering MVP within 6-week sprints.],
+              [Integrated Credit Bureau data feeds (Equifax, TransUnion, Experian) into 1600+ field schema using PySpark, applying SCD2/SCD1 for historical tracking.],
+              [Strengthened security posture by remediating vulnerabilities, implementing RBAC IAM policies, and developing test frameworks achieving 95% coverage with pytest.]
+            )
+            *Technologies:* AWS (S3, Glue, Step Functions, Lambda, Athena, Redshift), Snowflake, Databricks, PySpark, Terraform, Jenkins, GitHub Actions, pytest, behave
+          ],
+        ),
+        subSection(
+          title: "Unity Population Health",
+          titleEnd: "Remote",
+          subTitle: "Data Engineer",
+          subTitleEnd: "(Aug 2023 – Nov 2024)",
           content: [
             #list(
               [Architected HIPAA-compliant ELT platform using Azure Data Factory and Databricks, automating 8-hourly EMR data extraction via RESTful APIs with OAuth 2.0.],
@@ -125,10 +113,10 @@
           ],
         ),
         subSection(
-          title: "Datalysys software Solutions Pvt Ltd",
+          title: "Unity Population Health",
           titleEnd: "Remote",
           subTitle: "Associate Data Engineer",
-          subTitleEnd: "Sep 2020 – Jul 2022",
+          subTitleEnd: "(Sep 2020 – Jul 2022)",
           content: [
             #list(
               [Orchestrated complex ETL workflows using Airflow DAGs automating SQL Server processes with dynamic pipeline generation and SLA monitoring.],
@@ -141,38 +129,22 @@
             )
             *Technologies:* Apache Airflow, PySpark, Databricks, Azure Bot Service, Cognitive Services, SQL Server, Python, scikit-learn, NLP, Tableau, Jira
           ],
+        ),
+        subSection(
+          title: "The Spark Foundations",
+          titleEnd: "Remote",
+          subTitle: "Junior Data Scientist",
+          subTitleEnd: "(Apr 2020 – Aug 2020)",
+          content: [
+            #list(
+              [Optimized data pipelines with Airflow DAGs and PostgreSQL, accelerating retrieval by 40% and improving response time by 35% through indexing.],
+              [Built Ensemble ML models (Random Forest, Gradient Boosting) achieving 84% accuracy with PCA and feature selection, visualized in Tableau dashboards.]
+            )
+            *Technologies:* Apache Airflow, Python, PostgreSQL, scikit-learn, Random Forest, Gradient Boosting, PCA, Tableau, Pandas, NumPy
+          ],
         ),      
     ),
 ),
-    section(
-      title: "Technical Skills",
-      content: (
-        subSection(
-          content: [
-            #table(
-              columns: (auto, 1fr),
-              align: (left, left),
-              stroke: 0.5pt + rgb("#000000"),
-              inset: 6pt,
-              [*Languages*], [Python 3.x, R, SQL, T-SQL, Spark SQL, PySpark, Java],
-              [*Database*], [PostgreSQL, SQL Server, MSSQL, MySQL, SQLite, Snowflake, MongoDB],
-              [*Methodologies*], [Agile, Scrum, Waterfall],
-              [*Operating Systems*], [Linux (Any Distro), Unix, Windows],
-              [*Cloud Services*], [AWS (S3, EC2, Lambda, Glue, Step Functions, Athena, Redshift), Azure (Data Factory, Databricks, ADLS, Bot Service), GCP],
-              [*Big Data Framework*], [Apache Hadoop, Spark, Kafka, Solr, Pig, Hive, Databricks, Snowflake],
-              [*Data Integration*], [ETL/ELT, Azure Data Factory, AWS Glue, Step Functions, Airflow, Erwin Modelling],
-              [*Statistical Methods*], [Hypothesis Testing, ANOVA, Time Series, Confidence Intervals, Bayes Law, PCA, Dimensionality Reduction, Cross-Validation],
-              [*Business Intelligence & Predictive Models*], [Regression Analysis, Bayesian Method, Decision Tree, Random Forests, SVM, Neural Network, K-Means Clustering, KNN, Ensemble Methods, NLP],
-              [*Reporting Tools*], [Tableau (Desktop, Server, Online), Microsoft Power BI, Smartsheet, Google Sheets, Google Data Studio, Microsoft Excel],
-              [*Data Visualization*], [Tableau, Microsoft Power BI, Matplotlib, Seaborn, Plotly, Microsoft Excel],
-              [*Machine Learning*], [Regression, Clustering, SVM, Decision Trees, Classification, Recommendation Systems],
-              [*ETL/Data Warehouse*], [Talend, Informatica, Data Modeling (Star Schema, Snowflake Schema), FACT and Dimension Tables, Pivot Tables],
-              [*Web Framework*], [Flask, Django, Streamlit],
-            )
-          ],
-        ),
-      ),
-    ),
     section(
       title: "Education",
       content: (
@@ -220,14 +192,8 @@
         subSection(
           title: "",
           content: [
-#v(-0.8em)
-            #list([*Databricks Certified Data Engineer Associate*],
-            [*Microsoft Certified: Azure Data Engineer Associate*],
-            [*Databricks Certified: Generative AI Fundamentals*],
-            [*Google Certified: Introduction to Generative AI*],
-            [*Jovian Certified: Data Analysis with Python : Zero to Pandas*]
-
-            )
+#v(-1.0em)
+            *Databricks Certified Data Engineer Associate* | *Microsoft Certified: Azure Data Engineer Associate*
           ],
         ),
       ),
